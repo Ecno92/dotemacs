@@ -18,3 +18,4 @@
 (depends-on "exec-path-from-shell")
 (depends-on "wgrep")
 (depends-on "rust-mode")
+(depends-on "redo+")
