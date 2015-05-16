@@ -10,3 +10,7 @@
 /tramp
 ido.last
 smex-items
+session.*
+/games
+/eshell
+/autosaves
