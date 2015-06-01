@@ -19,3 +19,4 @@
 (depends-on "wgrep")
 (depends-on "rust-mode")
 (depends-on "redo+")
+(depends-on "py-yapf")
