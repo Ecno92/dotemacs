@@ -13,9 +13,17 @@
 
 (defun ui-after-init ()
   (if (display-graphic-p)
-      (load-theme 'zenburn))
+    (load-theme 'solarized t))
   (if (fboundp 'toggle-frame-fullscreen)
       (toggle-frame-fullscreen)))
+
+
+(add-hook 'after-make-frame-functions
+          (lambda (frame)
+            (let ((mode (if (display-graphic-p frame) 'light 'dark)))
+              (set-frame-parameter frame 'background-mode mode)
+              (set-terminal-parameter frame 'background-mode mode))
+            (enable-theme 'solarized)))
 
 (add-hook 'after-init-hook 'ui-after-init)
 
@@ -107,7 +115,7 @@
  '(backup-directory-alist (quote ((".*" . "~/.emacs.d/backups/"))))
  '(custom-safe-themes
    (quote
-    ("282606e51ef2811142af5068bd6694b7cf643b27d63666868bc97d04422318c1" "da7fa7211dd96fcf77398451e3f43052558f01b20eb8bee9ac0fd88627e11e22" "f0ea6118d1414b24c2e4babdc8e252707727e7b4ff2e791129f240a2b3093e32" "11d069fbfb0510e2b32a5787e26b762898c7e480364cbc0779fe841662e4cf5d" default))))
+    ("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" "282606e51ef2811142af5068bd6694b7cf643b27d63666868bc97d04422318c1" "da7fa7211dd96fcf77398451e3f43052558f01b20eb8bee9ac0fd88627e11e22" "f0ea6118d1414b24c2e4babdc8e252707727e7b4ff2e791129f240a2b3093e32" "11d069fbfb0510e2b32a5787e26b762898c7e480364cbc0779fe841662e4cf5d" default))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

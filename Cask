@@ -14,7 +14,7 @@
 (depends-on "python-mode")
 (depends-on "smex")
 (depends-on "yaml-mode")
-(depends-on "zenburn-theme")
+(depends-on "color-theme-solarized")
 (depends-on "exec-path-from-shell")
 (depends-on "wgrep")
 (depends-on "rust-mode")
