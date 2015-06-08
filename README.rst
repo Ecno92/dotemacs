@@ -31,14 +31,20 @@ Installation
 ============
 
 1. Install Emacs:
+
    * Debian based desktop: ``$ sudo apt-get install emacs24``
+
    * Debian based server: ``$ sudo apt-get install emacs24-nox``
+
    * Mac OSX: `Just check this page <http://www.emacswiki.org/emacs/EmacsForMacOS#toc12>`_
+
 2. Move into the home directory. ``$ cd ~``
 3. Clone my repo or your own fork. ``$ git clone https://github.com/Ecno92/dotemacs .emacs.d``
 4. Move into the directory ``$ cd .emacs.d/``
 5. Execute the install command in the Makefile which installs `Cask <https://cask.github.io/>`_ and your complete environment. ``$ make install``
+
    * Take a look at the ``Makefile``. The next time you can just run ``make cask`` to update your dependencies.
+
 6. Run emacs! ``$ emacs``
 
 Useful resources
