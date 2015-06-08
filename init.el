@@ -149,3 +149,8 @@
 
 ;; Magit
 (setq magit-last-seen-setup-instructions "1.4.0")
+
+
+;; Vagrant-tramp
+(eval-after-load 'tramp
+  '(vagrant-tramp-enable))
