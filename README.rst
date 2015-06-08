@@ -54,6 +54,7 @@ Useful resources
 * `Magit Cheatsheet <http://daemianmack.com/magit-cheatsheet.html>`_
 * `Video tutorial Magit (Git Client) <https://vimeo.com/2871241>`_
 * `Emacs Reference Card (Cheatsheets) <https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf>`_
+* `Awesome Emacs - List of awesome packages, libraries and links <https://github.com/emacs-tw/awesome-emacs>`_
 
 Contributions
 =============
