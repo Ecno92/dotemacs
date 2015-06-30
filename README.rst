@@ -43,9 +43,22 @@ Installation
 4. Move into the directory ``$ cd .emacs.d/``
 5. Execute the install command in the Makefile which installs `Cask <https://cask.github.io/>`_ and your complete environment. ``$ make install``
 
-   * Take a look at the ``Makefile``. The next time you can just run ``make cask`` to update your dependencies.
+   * Take a look at the ``Makefile``. The next time you can just run ``$ make cask`` to update your dependencies.
 
 6. Run emacs! ``$ emacs``
+
+
+List of Dependencies
+====================
+
+Some dependencies have to be installed in order to make this environment work well.
+The installation of those dependencies is not covered in this *dotfile* repository since
+the installation procedure may change over time. ::
+
+  * JS Beautify (NPM)
+  * pep8 (PIP)
+  * flake8 (PIP)
+  * yapf (PIP)
 
 Useful resources
 =================
@@ -55,6 +68,7 @@ Useful resources
 * `Video tutorial Magit (Git Client) <https://vimeo.com/2871241>`_
 * `Emacs Reference Card (Cheatsheets) <https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf>`_
 * `Awesome Emacs - List of awesome packages, libraries and links <https://github.com/emacs-tw/awesome-emacs>`_
+* `Aaron Bedra's Emacs 24 Configuration <http://www.aaronbedra.com/emacs.d/>`_
 
 Contributions
 =============
