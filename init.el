@@ -4,6 +4,18 @@
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 
+;; Encoding
+;; http://stackoverflow.com/questions/2901541/which-coding-system-should-i-use-in-emacs
+(setq utf-translate-cjk-mode nil)
+(set-language-environment 'utf-8)
+(set-keyboard-coding-system 'utf-8-mac) ; For old Carbon emacs on OS X only
+(setq locale-coding-system 'utf-8)
+(set-default-coding-systems 'utf-8)
+(set-terminal-coding-system 'utf-8)
+(unless (eq system-type 'windows-nt)
+  (set-selection-coding-system 'utf-8))
+(prefer-coding-system 'utf-8)
+
 ;; UI
 (setq ns-use-native-fullscreen nil)
 (tool-bar-mode -1)
@@ -154,3 +166,7 @@
 ;; Vagrant-tramp
 (eval-after-load 'tramp
   '(vagrant-tramp-enable))
+
+;; Windows hacks (requires cleanup)
+(if (eq system-type `windows-nt)
+    (setq py-python-command "c:/Python33/python"))
