@@ -63,13 +63,11 @@ the installation procedure may change over time. ::
 Usage (incomplete)
 ==================
 
-``C-x C-j`` Direx
-
-``C-/`` Undo
-``C-x C-/`` Redo
-
-``M-x browse-at-remote`` Browse at remote (Github/BitBucket)
-``C-x g`` Magit Status
+* ``C-x C-j`` Direx
+* ``C-/`` Undo
+* ``C-x C-/`` Redo
+* ``M-x browse-at-remote`` Browse at remote (Github/BitBucket)
+* ``C-x g`` Magit Status
 
 Useful resources
 ================
@@ -85,4 +83,4 @@ Contributions
 =============
 
 Although dotfiles are very personal I'm always open for cool suggestions.
-Just open a Pull-request and I'll accept it if I like it.
+Just open a pull-request and I'll accept it if I like it.
