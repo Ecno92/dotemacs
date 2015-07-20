@@ -60,8 +60,19 @@ the installation procedure may change over time. ::
   * flake8 (PIP)
   * yapf (PIP)
 
+Usage (incomplete)
+==================
+
+``C-x C-j`` Direx
+
+``C-/`` Undo
+``C-x C-/`` Redo
+
+``M-x browse-at-remote`` Browse at remote (Github/BitBucket)
+``C-x g`` Magit Status
+
 Useful resources
-=================
+================
 
 * `Emacs @ StackExchange <https://emacs.stackexchange.com/>`_
 * `Magit Cheatsheet <http://daemianmack.com/magit-cheatsheet.html>`_

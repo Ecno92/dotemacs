@@ -22,3 +22,6 @@
 (depends-on "redo+")
 (depends-on "py-yapf")
 (depends-on "vagrant-tramp")
+(depends-on "popwin")
+(depends-on "direx")
+(depends-on "browse-at-remote")

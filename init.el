@@ -39,11 +39,26 @@
 
 (add-hook 'after-init-hook 'ui-after-init)
 
+;; Yes/No
+(defalias 'yes-or-no-p 'y-or-n-p)
+
+;; Startup - Default Screen
+(setq inhibit-splash-screen t
+      initial-scratch-message nil)
+
 ;; Editing
 (require 'auto-complete)
 
 ;; Navigation
 (windmove-default-keybindings)
+;; Direx & Popwin
+(require 'popwin)
+(popwin-mode 1)
+(require 'direx)
+(global-set-key (kbd "C-x C-j") 'direx:jump-to-directory)
+(push '(direx:direx-mode :position left :width 25 :dedicated t)
+      popwin:special-display-config)
+(global-set-key (kbd "C-x C-j") 'direx:jump-to-directory-other-window)
 ;; Windmove in terminal
 (global-set-key (kbd "C-c <left>")  'windmove-left)
 (global-set-key (kbd "C-c <right>") 'windmove-right)
@@ -123,8 +138,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(auto-save-file-name-transforms (quote ((".*" "~/.emacs.d/autosaves/\\1" t))))
- '(backup-directory-alist (quote ((".*" . "~/.emacs.d/backups/"))))
  '(custom-safe-themes
    (quote
     ("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" "282606e51ef2811142af5068bd6694b7cf643b27d63666868bc97d04422318c1" "da7fa7211dd96fcf77398451e3f43052558f01b20eb8bee9ac0fd88627e11e22" "f0ea6118d1414b24c2e4babdc8e252707727e7b4ff2e791129f240a2b3093e32" "11d069fbfb0510e2b32a5787e26b762898c7e480364cbc0779fe841662e4cf5d" default))))
@@ -138,12 +151,8 @@
 ;;Ubuntu bugfixes - keyboard issue. Was unable to type ' " '.
 (require 'iso-transl)
 
-;;https://snarfed.org/gnu_emacs_backup_files
-;; Put autosave files (ie #foo#) and backup files (ie foo~) in ~/.emacs.d/.
-
-
-;; create the autosave dir if necessary, since emacs won't.
-(make-directory "~/.emacs.d/autosaves/" t)
+;; Disable backups
+(setq make-backup-files nil)
 
 ;; Show lines which exceed a limit
 ;; http://emacsredux.com/blog/2013/05/31/highlight-lines-that-exceed-a-certain-length-limit/
@@ -161,7 +170,10 @@
 
 ;; Magit
 (setq magit-last-seen-setup-instructions "1.4.0")
+(global-set-key (kbd "C-x g") 'magit-status)
 
+;; Browse at remote
+(require 'browse-at-remote)
 
 ;; Vagrant-tramp
 (eval-after-load 'tramp
