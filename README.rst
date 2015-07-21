@@ -67,6 +67,7 @@ Usage (incomplete)
 * ``C-/`` Undo
 * ``C-x C-/`` Redo
 * ``M-x browse-at-remote`` Browse at remote (Github/BitBucket)
+* ``M-x git-link`` Create a link for BitBucket, Github etc.
 * ``C-x g`` Magit Status
 
 Useful resources

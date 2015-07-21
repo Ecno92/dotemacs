@@ -168,12 +168,11 @@
 (define-key global-map (kbd "C-/") 'undo)
 (define-key global-map (kbd "C-x C-/") 'redo)
 
-;; Magit
+;; Git related
 (setq magit-last-seen-setup-instructions "1.4.0")
 (global-set-key (kbd "C-x g") 'magit-status)
-
-;; Browse at remote
 (require 'browse-at-remote)
+(require 'git-link)
 
 ;; Vagrant-tramp
 (eval-after-load 'tramp
