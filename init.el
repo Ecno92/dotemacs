@@ -51,6 +51,9 @@
 
 ;; Navigation
 (windmove-default-keybindings)
+;; Killing
+(require 'browse-kill-ring)
+(global-set-key "\C-cy" 'browse-kill-ring)
 ;; Direx & Popwin
 (require 'popwin)
 (popwin-mode 1)
@@ -177,7 +180,3 @@
 ;; Vagrant-tramp
 (eval-after-load 'tramp
   '(vagrant-tramp-enable))
-
-;; Windows hacks (requires cleanup)
-(if (eq system-type `windows-nt)
-    (setq py-python-command "c:/Python33/python"))
