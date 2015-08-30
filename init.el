@@ -108,12 +108,12 @@
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 
 ;; Python
-(require 'python-mode)
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:setup-keys t)
 (setq jedi:complete-on-dot t)
 (set-variable 'flycheck-highlighting-mode 'lines)
 (add-hook 'after-init-hook 'global-flycheck-mode)
+(require 'virtualenvwrapper)
 (require 'py-yapf)
 
 
