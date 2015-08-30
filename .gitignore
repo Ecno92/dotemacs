@@ -14,3 +14,4 @@ session.*
 /games
 /eshell
 /autosaves
+/projectile.cache
