@@ -38,6 +38,7 @@
             (enable-theme 'solarized)))
 
 (add-hook 'after-init-hook 'ui-after-init)
+(set-frame-font "Hack:pixelsize=14:foundry=unknown:weight=bold:slant=normal:width=normal:spacing=100:scalable=true")
 
 ;; Yes/No
 (defalias 'yes-or-no-p 'y-or-n-p)
