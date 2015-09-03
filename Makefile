@@ -1,10 +1,11 @@
 FONT_FOLDER := ~/.fonts/
+HACK_FONT_URL := https://github.com/chrissimpkins/Hack/releases/download/v2.010/Hack-v2_010-otf.zip
 
 install-font:
-	@if [ ! -f $(FONT_FOLDER)Hack-Regular.ttf ] ; \
+	@if [ ! -f $(FONT_FOLDER)Hack-Regular.otf ] ; \
 	then \
 		mkdir -p $(FONT_FOLDER); \
-		wget https://github.com/chrissimpkins/Hack/releases/download/v2.010/Hack-v2_010-ttf.zip -O $(FONT_FOLDER)temp.zip; \
+		wget $(HACK_FONT_URL) -O $(FONT_FOLDER)temp.zip; \
 		unzip $(FONT_FOLDER)temp.zip -d $(FONT_FOLDER); \
 		rm $(FONT_FOLDER)temp.zip; \
 	else \
