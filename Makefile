@@ -1,6 +1,9 @@
 FONT_FOLDER := ~/.fonts/
 HACK_FONT_URL := https://github.com/chrissimpkins/Hack/releases/download/v2.010/Hack-v2_010-otf.zip
 
+custom.el:
+	touch custom.el
+
 install-font:
 	@if [ ! -f $(FONT_FOLDER)Hack-Regular.otf ] ; \
 	then \
@@ -18,10 +21,10 @@ install-cask:
 cask:
 	../.cask/bin/cask
 
-install:
-	install-font
-	install-cask
-	cask
+install: custom.el
+	make install-font
+	make install-cask
+	make cask
 
 .PHONY:	install-font \
 	install-cask \
