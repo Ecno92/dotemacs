@@ -128,6 +128,8 @@
        "\\("
        "Password for 'http.*':"
        "\\|"
+       "\\w+ password:"
+       "\\|"
        comint-password-prompt-regexp
        "\\)"
        ))
