@@ -122,7 +122,6 @@
 (setq jedi:complete-on-dot t)
 (set-variable 'flycheck-highlighting-mode 'lines)
 (add-hook 'after-init-hook 'global-flycheck-mode)
-(require 'virtualenvwrapper)
 (require 'py-yapf)
 
 
