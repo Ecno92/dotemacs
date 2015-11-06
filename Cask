@@ -18,6 +18,7 @@
 (depends-on "wgrep")
 (depends-on "rust-mode")
 (depends-on "redo+")
+(depends-on "python-mode")
 (depends-on "py-yapf")
 (depends-on "vagrant-tramp")
 (depends-on "popwin")
