@@ -53,9 +53,7 @@
 
 ;; Navigation
 (windmove-default-keybindings)
-;; Killing
-(require 'browse-kill-ring)
-(global-set-key "\C-cy" 'browse-kill-ring)
+
 ;; Direx & Popwin
 (require 'popwin)
 (popwin-mode 1)
@@ -182,8 +180,3 @@
 (setq magit-last-seen-setup-instructions "1.4.0")
 (global-set-key (kbd "C-x g") 'magit-status)
 (require 'browse-at-remote)
-(require 'git-link)
-
-;; Vagrant-tramp
-(eval-after-load 'tramp
-  '(vagrant-tramp-enable))
