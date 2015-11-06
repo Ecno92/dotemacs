@@ -17,6 +17,7 @@
 (prefer-coding-system 'utf-8)
 
 ;; UI
+(beacon-mode 1)
 (setq ns-use-native-fullscreen nil)
 (tool-bar-mode -1)
 (menu-bar-mode -1)

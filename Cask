@@ -28,3 +28,4 @@
 (depends-on "browse-at-remote")
 (depends-on "git-link")
 (depends-on "browse-kill-ring")
+(depends-on "beacon")
