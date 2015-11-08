@@ -16,7 +16,12 @@ install-font:
 	fi;
 
 install-cask:
-	curl -fsSL https://raw.githubusercontent.com/cask/cask/master/go | python
+	@if [ ! -d ../.cask ] ; \
+	then \
+		curl -fsSL https://raw.githubusercontent.com/cask/cask/master/go | python; \
+	else \
+		echo "Cask already installed. Remove cask manually if you want to do a reinstall."; \
+	fi;
 
 cask:
 	../.cask/bin/cask
