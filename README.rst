@@ -20,21 +20,23 @@ This repository is designed for me. So it's the Emacs configuration that I like.
 However you may also like it if:
 
 * You're a web developer who uses Python/Django, JS, and now and then some PHP.
-* You want to learn some new coding languages like `Rust <http://www.rust-lang.org/>`_.
 * You are used to some shortcuts for things like redoing an edit and you want to use it the easy way.
 * You like a theme that is fairly fancy and easy on the eyes.
-* You may use this on Ubuntu.
+* You are using Ubuntu or another Debian based Linux distribution.
 
 So try it! Fork it if you want to keep your own version!
 
 Installation
 ============
 
-1. Install Emacs:
+1. Install Emacs *(24.4 or higher)*:
 
    * Debian based desktop: ``$ sudo apt-get install emacs24``
 
    * Debian based server: ``$ sudo apt-get install emacs24-nox``
+
+   * In case Emacs 24.4 is not available in your repositories check out the
+     ``install-emacs-from-source`` command in the Makefile.
 
    * Mac OSX: `Just check this page <http://www.emacswiki.org/emacs/EmacsForMacOS#toc12>`_
 
