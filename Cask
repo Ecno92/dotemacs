@@ -3,7 +3,6 @@
 (source marmalade)
 
 (depends-on "ace-jump-mode")
-(depends-on "bash-completion")
 (depends-on "flycheck")
 (depends-on "flymake-jshint")
 (depends-on "jedi")
