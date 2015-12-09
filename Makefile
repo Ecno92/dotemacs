@@ -53,6 +53,7 @@ cask:
 	../.cask/bin/cask
 
 install: custom.el
+	sudo apt-get install gettext-el -y
 	make install-font
 	make install-cask
 	make cask
