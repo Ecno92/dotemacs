@@ -29,6 +29,8 @@ So try it! Fork it if you want to keep your own version!
 Installation
 ============
 
+**WARNING:** Ubuntu is the only supported OS.
+
 1. Install Emacs *(24.4 or higher)*:
 
    * Debian based desktop: ``$ sudo apt-get install emacs24``
@@ -38,7 +40,6 @@ Installation
    * In case Emacs 24.4 is not available in your repositories check out the
      ``install-emacs-from-source`` command in the Makefile.
 
-   * Mac OSX: `Just check this page <http://www.emacswiki.org/emacs/EmacsForMacOS#toc12>`_
 
 2. Move into the home directory. ``$ cd ~``
 3. Clone my repo or your own fork. ``$ git clone https://github.com/Ecno92/dotemacs .emacs.d``
