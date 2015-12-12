@@ -62,6 +62,7 @@ the installation procedure may change over time. ::
   * pep8 (PIP)
   * flake8 (PIP)
   * yapf (PIP)
+  * gettext-el (APT)
 
 Usage (incomplete)
 ==================
