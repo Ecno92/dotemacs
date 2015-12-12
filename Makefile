@@ -12,7 +12,7 @@ EMACS_BUILD_DIR := /tmp/EMACS
 install-emacs-from-source:
 	echo "Starting to install "$(EMACS_VERSION)" from source"
 	echo "First uninstall your old version if applicable."
-	sudo apt-get remove emacs
+	sudo apt-get remove emacs24
 	echo "Now we need to install some dependencies for building"
 	sudo apt-get install build-essential checkinstall
 	sudo apt-get build-dep emacs24
@@ -24,7 +24,7 @@ install-emacs-from-source:
 	cd $(EMACS_BUILD_DIR)/$(EMACS_VERSION) && \
 	./configure && \
 	make && \
-	sudo checkinstall && \
+	sudo checkinstall --pkgname=emacs24 && \
 	echo "Finished installing "$(EMACS_VERSION)" from source."
 
 custom.el:
