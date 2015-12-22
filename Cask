@@ -24,3 +24,4 @@
 (depends-on "beacon")
 (depends-on "helm")
 (depends-on "helm-projectile")
+(depends-on "graphviz-dot-mode")

@@ -63,6 +63,7 @@ the installation procedure may change over time. ::
   * flake8 (PIP)
   * yapf (PIP)
   * gettext-el (APT)
+  * graphviz (APT)
 
 Usage (incomplete)
 ==================

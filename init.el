@@ -173,3 +173,5 @@
 (setq magit-last-seen-setup-instructions "1.4.0")
 (global-set-key (kbd "C-x g") 'magit-status)
 (require 'browse-at-remote)
+
+(require 'graphviz-dot-mode)
