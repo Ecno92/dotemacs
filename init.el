@@ -17,6 +17,8 @@
 (prefer-coding-system 'utf-8)
 
 ;; UI
+(require 'emojify)
+(add-hook 'after-init-hook #'global-emojify-mode)
 (beacon-mode 1)
 (setq ns-use-native-fullscreen nil)
 (tool-bar-mode -1)
