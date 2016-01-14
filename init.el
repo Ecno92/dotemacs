@@ -169,3 +169,5 @@
 (require 'browse-at-remote)
 
 (require 'graphviz-dot-mode)
+
+(require 'docker)

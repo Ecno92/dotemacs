@@ -26,3 +26,4 @@
 (depends-on "helm-projectile")
 (depends-on "graphviz-dot-mode")
 (depends-on "emojify")
+(depends-on "docker")

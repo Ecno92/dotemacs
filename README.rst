@@ -73,6 +73,7 @@ Usage (incomplete)
 * ``C-x C-/`` Redo
 * ``M-x browse-at-remote`` Browse at remote (Github/BitBucket)
 * ``C-x g`` Magit Status
+* `Docker Commands <https://github.com/Silex/docker.el#commands`_
 
 Useful resources
 ================
