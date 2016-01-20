@@ -58,7 +58,8 @@ Some dependencies have to be installed in order to make this environment work we
 The installation of those dependencies is not covered in this *dotfile* repository since
 the installation procedure may change over time. ::
 
-  * JS Beautify (NPM)
+  * js-beautify (NPM)
+  * eslint + (eslint-plugin-angular & eslint-plugin-lodash) (NPM)
   * pep8 (PIP)
   * flake8 (PIP)
   * yapf (PIP)

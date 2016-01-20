@@ -7,6 +7,7 @@
 (depends-on "flymake-jshint")
 (depends-on "jedi")
 (depends-on "js2-mode")
+(depends-on "web-mode")
 (depends-on "web-beautify")
 (depends-on "magit")
 (depends-on "php-mode")
