@@ -29,3 +29,4 @@
 (depends-on "emojify")
 (depends-on "dockerfile-mode")
 (depends-on "docker")
+(depends-on "csv-mode")

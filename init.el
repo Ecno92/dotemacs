@@ -33,7 +33,7 @@
       (toggle-frame-fullscreen)))
 
 (add-hook 'after-init-hook 'ui-after-init)
-(set-frame-font "Hack:pixelsize=12:weight=normal:slant=normal:width=normal:spacing=100:scalable=true")
+(set-frame-font "Hack:pixelsize=14:weight=normal:slant=normal:width=normal:spacing=100:scalable=true")
 
 ;; Yes/No
 (defalias 'yes-or-no-p 'y-or-n-p)
@@ -129,12 +129,22 @@
   (append flycheck-disabled-checkers
     '(javascript-jshint)))
 (flycheck-add-mode 'javascript-eslint 'web-mode)
+(defun my-web-mode-hook ()
+  "Hooks for Web mode."
+  (setq web-mode-markup-indent-offset 2)
+)
+(add-hook 'web-mode-hook  'my-web-mode-hook)
 
 ;; Python
+(require 'python)
+(require 'python-mode)
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:setup-keys t)
 (setq jedi:complete-on-dot t)
 (set-variable 'flycheck-highlighting-mode 'lines)
+(defun my-shell-mode-hook ()
+  (add-hook 'comint-output-filter-functions 'python-pdbtrack-comint-output-filter-function t))
+(add-hook 'shell-mode-hook 'my-shell-mode-hook)
 (require 'py-yapf)
 
 
@@ -187,6 +197,10 @@
 (global-set-key (kbd "C-x g") 'magit-status)
 (require 'browse-at-remote)
 
+;; Other
 (require 'graphviz-dot-mode)
-
 (require 'docker)
+(require 'csv-mode)
+
+(setq grep-find-template
+      "find . <X> -type f <F> -exec grep <C> -nH -e <R> \\{\\} +")
